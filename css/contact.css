@@ -1,0 +1,67 @@
+/* ============================================
+   CONTACT — Final section with links
+   ============================================ */
+
+#contact {
+    padding: 120px 120px;
+    border-top: 1px solid #E8E6E1;
+    background-color: #1A1A1A;
+    /* dark background for contrast */
+}
+
+/* Override section label color for dark background */
+#contact .section-label {
+    color: #7C9E87;
+}
+
+/* Override section title color for dark background */
+#contact .section-title {
+    color: #F8F7F4;
+    margin-bottom: 16px;
+}
+
+/* ── Subtitle below heading ── */
+.contact-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(248, 247, 244, 0.55);
+    max-width: 500px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+}
+
+/* ── Contact links row ── */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 80px;
+}
+
+/* ── Individual contact link button ── */
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border: 1px solid rgba(248, 247, 244, 0.15);
+    border-radius: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(248, 247, 244, 0.75);
+    transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+    border-color: #7C9E87;
+    color: #7C9E87;
+}
+
+/* ── Footer note at very bottom ── */
+.footer-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: rgba(248, 247, 244, 0.3);
+    letter-spacing: 0.05em;
+}

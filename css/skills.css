@@ -1,0 +1,34 @@
+/* ============================================
+   SKILLS — Grouped skill categories
+   ============================================ */
+
+#skills {
+    padding: 120px 120px;
+    border-top: 1px solid #E8E6E1;
+}
+
+/* ── Grid of skill category cards ── */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* ── Individual skill category card ── */
+.skill-category {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E6E1;
+    border-radius: 8px;
+    padding: 28px;
+}
+
+/* ── Category title ── */
+.skill-category-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7C9E87;
+    /* sage green */
+    margin-bottom: 16px;
+}

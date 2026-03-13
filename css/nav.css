@@ -1,0 +1,61 @@
+/* ============================================
+   NAV — Fixed top navigation bar
+   ============================================ */
+
+#navbar {
+    /* Fix nav to top of screen while scrolling */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    /* Layout — logo left, links right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Spacing & appearance */
+    padding: 0 60px;
+    height: 64px;
+    background-color: rgba(248, 247, 244, 0.92);
+    backdrop-filter: blur(10px);
+    /* frosted glass effect */
+    border-bottom: 1px solid #E8E6E1;
+}
+
+/* ── Logo ── */
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    letter-spacing: 0.01em;
+}
+
+/* ── Nav links container ── */
+.nav-links {
+    display: flex;
+    gap: 36px;
+}
+
+/* ── Individual nav links ── */
+.nav-links a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease;
+}
+
+/* Hover — turn sage green */
+.nav-links a:hover {
+    color: #7C9E87;
+}
+
+/* Active nav link — highlights current section */
+.nav-links a.active {
+    color: #7C9E87;
+    font-weight: 500;
+}

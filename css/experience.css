@@ -1,0 +1,78 @@
+/* ============================================
+   EXPERIENCE — Timeline of work history
+   ============================================ */
+
+#experience {
+    padding: 120px 120px;
+    border-top: 1px solid #E8E6E1;
+    background-color: #F3F1ED;
+    /* alternating section background */
+}
+
+/* ── Timeline container ── */
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Individual timeline row ── */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    /* date/company left, details right */
+    gap: 48px;
+    padding: 40px 0;
+    border-bottom: 1px solid #E8E6E1;
+}
+
+/* Remove border from last item */
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+/* ── Left column — date and company ── */
+.timeline-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: #999;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.timeline-company {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+}
+
+/* Badge showing type of role */
+.timeline-type {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    background-color: #EEF3EF;
+    border: 1px solid #C4D6C8;
+    border-radius: 3px;
+    color: #7C9E87;
+}
+
+/* ── Right column — role and description ── */
+.timeline-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+}
+
+.timeline-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.8;
+}

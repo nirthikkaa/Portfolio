@@ -1,0 +1,110 @@
+/* ============================================
+   HERO — First section visitors see
+   ============================================ */
+
+#hero {
+    /* Full screen height minus nav */
+    min-height: 100vh;
+    padding-top: 64px;
+    /* offset for fixed nav */
+
+    /* Center everything vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Left aligned with breathing room */
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/* ── Small tag above name ── */
+.hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: lowercase;
+    color: #7C9E87;
+    /* sage green accent */
+    margin-bottom: 20px;
+
+    /* Small line before the tag */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Decorative line before tag */
+.hero-tag::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 1px;
+    background-color: #7C9E87;
+}
+
+/* ── Main name heading ── */
+.hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 7vw, 6rem);
+    /* responsive size */
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+}
+
+/* ── One-line tagline ── */
+.hero-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 300;
+    color: #555;
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+/* ── Buttons container ── */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+/* ── Base button styles — shared by all buttons ── */
+.btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+/* Primary button — sage green fill */
+.btn-primary {
+    background-color: #7C9E87;
+    color: #fff;
+    border: 1px solid #7C9E87;
+}
+
+.btn-primary:hover {
+    background-color: #6a8f75;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 158, 135, 0.3);
+}
+
+/* Secondary button — outlined */
+.btn-secondary {
+    background-color: transparent;
+    color: #1A1A1A;
+    border: 1px solid #C5C3BE;
+}
+
+.btn-secondary:hover {
+    border-color: #1A1A1A;
+    transform: translateY(-2px);
+}

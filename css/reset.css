@@ -1,0 +1,43 @@
+/* ============================================
+   RESET — Remove default browser styles
+   ============================================ */
+
+/* Box sizing for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base html settings */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* Global body styles */
+body {
+    background-color: #F8F7F4;
+    color: #1A1A1A;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove bullets from all lists */
+ul {
+    list-style: none;
+}
+
+/* Prevent images from overflowing */
+img {
+    max-width: 100%;
+    display: block;
+}

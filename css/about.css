@@ -1,0 +1,112 @@
+/* ============================================
+   ABOUT — Bio and education section
+   ============================================ */
+
+#about {
+    padding: 120px 120px;
+    border-top: 1px solid #E8E6E1;
+}
+
+/* ── Reusable section label — used across all sections ── */
+.section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7C9E87;
+    /* sage green */
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* ── Section title — reused across all sections ── */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 56px;
+    line-height: 1.2;
+}
+
+/* ── Two column grid ── */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* ── Bio text paragraphs ── */
+.about-bio p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* Highlight key words in bio */
+.about-bio strong {
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+/* ── Individual detail blocks on the right ── */
+.detail-block {
+    margin-bottom: 32px;
+}
+
+/* Small uppercase label above each block */
+.detail-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+/* Main text in detail block */
+.detail-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 4px;
+}
+
+/* Secondary text in detail block */
+.detail-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+/* ── Tag lists — reused across sections ── */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+/* Base tag style */
+.tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    background-color: #F0EEE9;
+    border: 1px solid #E2DFD9;
+    border-radius: 3px;
+    color: #666;
+}
+
+/* Accent tag — sage green tint */
+.tag.accent {
+    background-color: #EEF3EF;
+    border-color: #C4D6C8;
+    color: #7C9E87;
+}
