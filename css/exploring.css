@@ -1,0 +1,45 @@
+/* ============================================
+   EXPLORING — Currently exploring section
+   ============================================ */
+
+#exploring {
+    padding: 120px 120px;
+    border-top: 1px solid #E8E6E1;
+    background-color: #F3F1ED;
+    /* alternating section background */
+}
+
+/* ── Three column grid of exploration topics ── */
+.exploring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* ── Individual exploration item ── */
+.exploring-item {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E6E1;
+    border-radius: 8px;
+    padding: 28px;
+    border-left: 3px solid #7C9E87;
+    /* sage green left accent */
+}
+
+/* ── Topic title ── */
+.exploring-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+}
+
+/* ── Topic description ── */
+.exploring-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.7;
+}
